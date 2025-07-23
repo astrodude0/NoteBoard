@@ -18,7 +18,7 @@ const CreateNotePage = () => {
     }
 
     try {
-      await axios.post("http://localhost:3000/api/notes", {
+      await axios.post("/api/notes", {
         title,
         content,
       });
