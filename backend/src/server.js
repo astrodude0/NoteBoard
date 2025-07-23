@@ -9,7 +9,7 @@ const app = express();
 const port = 3000;
 const __dirname = path.resolve();
 
-dotenv.config({ debug: true, path: "../.env" });
+dotenv.config();
 
 if (process.env.NODE_ENV !== "production") {
   app.use(cors());
